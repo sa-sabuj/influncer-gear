@@ -11,6 +11,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(242, 242, 242);
 }
 .container{
     width: 80%;
@@ -61,6 +62,9 @@ body{
 .influncer-detail h1{
     font-size: 35px;
 }
+.influncer-detail p{
+    justify-content: center;
+}
 .influncer-detail .btn{
     background-color:#9b59b6;
     display: inline-block;
@@ -68,7 +72,198 @@ body{
     color: #FFFFFF;
     font-size: 17px;
     border-radius: 20px;
-    border: none
+    border: none;
+    margin: 20px ;
+}
 
+
+/* clint area */
+
+.clint-logo{
+    display: flex;
+
+    justify-content: space-evenly;
+}
+.clint-logo li{
+    list-style: none;
+}
+.clint-logo li img{
+    width: 100%;
+    height: auto;
+}
+
+/* <!-- Popular collection of product --> */
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:40px ;
+    grid-row-gap: 40px;
+}
+.product{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 290px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.product-detail .product-title{
+    margin: 5px;
+}
+.product-banner img{
+    width: 100%;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.see-more{
+    color: #9b59b6;
+    display: flex;
+    justify-content: right;
+    margin: 30px 0;
+}
+
+
+/* Footer area */
+
+.footer-area{
+    background-color: rgb(0, 0, 47);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+}
+.footer-text h2, p{
+    text-align: center;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    
+}
+.social{
+    margin: 10px 10px;
+}
+
+
+/* media query  for mobile*/
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .header-area{
+        display: block;
+    }
+    .logo-area{
+        margin: o;
+        text-align: center;
+    }
+    .menu-area{
+        display: none;
+    }
+    .influencer-slide{
+        display: block;
+        margin: -75px;
+    }
+    .influncer-detail h1{
+        text-align: center;
+        margin-top: 0;
+        font-size: 28px;
+    }
+    .influncer-detail .btn{
+        width: 30%;
+        margin: auto;
+        display: block;
+    }
+    .influncer-bg{
+        width: 50%;
+        margin: auto;
+        display: block;
+    }
+    .influncer-bg img{
+        margin-bottom: 60px;
+    }
+    .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.collection-title h1{
+    text-align: center;
+}
+
+element.style {
+}
+.footer-area {
+    background-color: rgb(0, 0, 47);
+    color: rgb(255, 255, 255);
+    padding: 30px 0;
+}
+        
+}
+
+/* media query  for tab*/
+
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+    .header-area{
+        display: block;
+    }
+    .logo-area{
+        margin: o;
+        text-align: center;
+    }
+    .menu-area{
+        display: none;
+    }
+    .influencer-slide{
+        display: block;
+        margin: -75px;
+    }
+    .influncer-detail h1{
+        text-align: center;
+        margin-top: 0;
+        font-size: 28px;
+    }
+    .influncer-detail .btn{
+        width: 30%;
+        margin: auto;
+        display: block;
+    }
+    .influncer-bg{
+        width: 50%;
+        margin: auto;
+        display: block;
+    }
+    .influncer-bg img{
+        margin-bottom: 60px;
+    }
+    .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.collection-title h1{
+    text-align: center;
+}
+.footer-area {
+    background-color: rgb(0, 0, 47);
+    color: rgb(255, 255, 255);
+    padding: 30px 0;
+}
+        
 
 }
